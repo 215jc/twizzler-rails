@@ -8,13 +8,12 @@ class CreateUsers < ActiveRecord::Migration
       t.string :fname
       t.string :lname
       t.string :headline
-
       t.timestamps null: false
     end
+  end  
 
   def down
     drop_table :users
   end  
 
-  end
 end
