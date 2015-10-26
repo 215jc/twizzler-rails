@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @twizzle.user %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @twizzle.content %>
+</p>
+
+<%= link_to 'Edit', edit_twizzle_path(@twizzle) %> |
+<%= link_to 'Back', twizzles_path %>
