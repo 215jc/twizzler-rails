@@ -30,5 +30,17 @@
   <%= @user.headline %>
 </p>
 
+<hr />
+
+<h2>Twizzles by <a href="/show/<%= @user.id %>"><%= @user.username %></a></h2>
+
+  <% @user.twizzles.sort_by { |key| key[:updated_at] }.reverse!.each do |twizzle| %>
+
+  <p><%= twizzle.content %><p>
+
+  <% end %>
+
+<hr />
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
