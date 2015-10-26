@@ -2,10 +2,11 @@
 
 <h1>Listing Twizzles</h1>
 
-<table>
+<table border="1">
   <thead>
     <tr>
       <th>User</th>
+      <th>User ID</th>
       <th>Content</th>
       <th colspan="3"></th>
     </tr>
@@ -15,6 +16,7 @@
     <% @twizzles.each do |twizzle| %>
       <tr>
         <td><%= twizzle.user %></td>
+        <td><%= twizzle.user_id %></td>
         <td><%= twizzle.content %></td>
         <td><%= link_to 'Show', twizzle %></td>
         <td><%= link_to 'Edit', edit_twizzle_path(twizzle) %></td>
