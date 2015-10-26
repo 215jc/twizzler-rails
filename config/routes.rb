@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'sessions/new'
+
   resources :twizzles
   resources :users
   root 'home#index'
