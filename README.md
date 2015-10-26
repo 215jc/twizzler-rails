@@ -1,5 +1,3 @@
-== README
-
 This application is a Twitter clone developed using Ruby on Rails 4.2.4.
 
 To run this application locally:
