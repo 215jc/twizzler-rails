@@ -32,13 +32,57 @@
 
 <hr>
 
-<h2>Twizzles by <a href="/show/<%= @user.id %>"><%= @user.username %></a></h2>
+<h2>Twizzles by 
+  <a href="/show/<%= @user.id %>">
+    <%= @user.username %>
+  </a>
+</h2>
 
   <% @user.twizzles.sort_by { |key| key[:updated_at] }.reverse!.each do |twizzle| %>
 
-  <p><%= twizzle.content %><p>
+    <p>
+      <%= twizzle.content %>
+    </p>
 
   <% end %>
+
+<hr>
+
+<h2>
+  <a href="/show/<%= @user.id %>">
+    <%= @user.username %>
+  </a>
+ is following
+</h2>
+
+  <% @user.following.sort_by { |key| key[:username] }.each do |user| %>
+
+  <p>
+    <a href="/show/<%= @user.id %>">
+      <%= user.username %>
+    </a>
+  </p>
+
+  <% end %>
+
+<hr>
+
+<h2>
+  <a href="/show/<%= @user.id %>">
+    <%= @user.username %>
+  </a>
+   is followed by
+</h2>
+
+<% @user.followers.sort_by { |key| key[:username] }.each do |user| %>
+
+  <p>
+    <a href="/show/<%= @user.id %>">
+      <%= user.username %>
+    </a>
+  </p>
+
+<% end %>
 
 <hr>
 
