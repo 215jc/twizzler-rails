@@ -1,0 +1,29 @@
+{
+  "name": "twizzler-rails",
+  "version": "1.0.0",
+  "description": "Twitter clone developed using Ruby on Rails 4.2.4",
+  "main": "routes.rb",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "stylus": "0.52.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/215jc/twizzler-rails.git"
+  },
+  "keywords": [
+    "rails"
+  ],
+  "author": "Jason Curran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/215jc/twizzler-rails/issues"
+  },
+  "homepage": "https://github.com/215jc/twizzler-rails#readme"
+}
