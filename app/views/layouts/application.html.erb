@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TwizzlerRails</title>
+  <title>
+  <%= content_for?(:title) ? content_for(:title) + ' | Twizzler ' : 'Twizzler' %>
+  </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= content_for?(:body_class) ? content_for(:body_class) + ' ' : '' %>">
 
   <header>
     <nav>
