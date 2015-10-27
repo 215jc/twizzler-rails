@@ -12,9 +12,7 @@
     <nav>
       <ul>
         <li>
-          <a href="/">
-            Home
-          </a>  
+          <%= link_to "Home", root_path %>
         </li>
         <li>
           <a href="/users">
@@ -25,28 +23,56 @@
           <a href="/twizzles">
             Twizzles
           </a>  
-        </li>           
+        </li>  
+
+        <% if logged_in? %>
+
+        <li>
+          <%= link_to "Profile", current_user %>
+        </li>
+        <li>
+          <%= link_to "Log out", logout_path, method: :delete %>
+        </li>
+
+        <% else %>
+
         <li>
           <a href="/users/new">
-            Sign Up
+            Sign up
           </a>  
         </li>
         <li>
           <a href="/login">
-            Log In
+            Log in
           </a>  
-        </li>        
+        </li>
+
+        <% end %>
+
       </ul>
     </nav>
   </header>
 
 <% if flash[:notice] %>
+
   <div>
+
     <%=flash[:notice] %>
+
   </div>
+  
 <% end %>
 
 <%= yield %>
+
+  <footer>
+    <hr />
+    <% if current_user %>
+      <p>You are logged in as: <%= current_user.username %></p>
+    <% else %>  
+      <p>You are not logged in</p>
+    <% end %>
+  </footer>
 
 </body>
 </html>
