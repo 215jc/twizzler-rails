@@ -7,6 +7,7 @@
     "test": "test"
   },
   "dependencies": {
+    "poststylus": "0.2.1",
     "stylus": "0.52.4"
   },
   "devDependencies": {},
