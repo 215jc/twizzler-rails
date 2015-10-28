@@ -4,6 +4,8 @@ To run this application locally:
 
 * Clone this repository
 
+* Run: npm install
+
 * Run: bundle install
 
 * Create Postgres database twizzler-rails_development with a username and password
