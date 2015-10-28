@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
+    postcss = require('gulp-postcss')
     poststylus = require('poststylus');
     watch = require('gulp-watch');
 

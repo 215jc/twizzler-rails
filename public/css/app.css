@@ -34,15 +34,15 @@ h4 {
   clear: both;
 }
 .card {
-  width: calc(99.99% * 1/4 - (15px - 15px * 1/4));
-  height: calc(99.99% * 1/4 - (15px - 15px * 1/4));
+  width: calc(99.99% * 1/4 - (1em - 1em * 1/4));
+  height: calc(99.99% * 1/4 - (1em - 1em * 1/4));
   position: relative;
-  height: 50px;
+  height: 5em;
 }
 .card:nth-child(n) {
   float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin-right: 1em;
+  margin-bottom: 1em;
   clear: none;
 }
 .card:last-child {
