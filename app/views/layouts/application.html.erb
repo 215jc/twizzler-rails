@@ -5,76 +5,77 @@
   <%= content_for?(:title) ? content_for(:title) + ' | Twizzler ' : 'Twizzler' %>
   </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="/css/app.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= content_for?(:body_class) ? content_for(:body_class) + ' ' : '' %>">
 
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <%= link_to "Home", root_path %>
-        </li>
-        <li>
-          <a href="/users">
-            Users
-          </a>  
-        </li>
-        <li>
-          <a href="/twizzles">
-            Twizzles
-          </a>  
-        </li>  
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+          <li>
+            <a href="/users">
+              Users
+            </a>  
+          </li>
+          <li>
+            <a href="/twizzles">
+              Twizzles
+            </a>  
+          </li>  
 
-        <% if logged_in? %>
+          <% if logged_in? %>
 
-        <li>
-          <%= link_to "Profile", current_user %>
-        </li>
-        <li>
-          <%= link_to "Log out", logout_path, method: :delete %>
-        </li>
+          <li>
+            <%= link_to "Profile", current_user %>
+          </li>
+          <li>
+            <%= link_to "Log out", logout_path, method: :delete %>
+          </li>
 
-        <% else %>
+          <% else %>
 
-        <li>
-          <a href="/users/new">
-            Sign up
-          </a>  
-        </li>
-        <li>
-          <a href="/login">
-            Log in
-          </a>  
-        </li>
+          <li>
+            <a href="/users/new">
+              Sign up
+            </a>  
+          </li>
+          <li>
+            <a href="/login">
+              Log in
+            </a>  
+          </li>
 
-        <% end %>
+          <% end %>
 
-      </ul>
-    </nav>
-  </header>
+        </ul>
+      </nav>
+    </header>
 
-<% if flash[:notice] %>
+  <% if flash[:notice] %>
 
-  <div>
+    <div>
 
-    <%=flash[:notice] %>
+      <%=flash[:notice] %>
 
-  </div>
-  
-<% end %>
+    </div>
+    
+  <% end %>
 
-<%= yield %>
+  <%= yield %>
 
-  <footer>
-    <hr />
-    <% if current_user %>
-      <p>You are logged in as: <%= current_user.username %></p>
-    <% else %>  
-      <p>You are not logged in</p>
-    <% end %>
-  </footer>
+    <footer>
+      <hr />
+      <% if current_user %>
+        <p>You are logged in as: <%= current_user.username %></p>
+      <% else %>  
+        <p>You are not logged in</p>
+      <% end %>
+    </footer>
 
 </body>
 </html>
