@@ -2,14 +2,26 @@ nav {
   border: 10px solid #008000;
 }
 .container {
-  width: 1000px;
+  *zoom: 1;
+  width: 800px;
   margin: auto;
+  border: 1px solid #000;
 }
 .container *:not(input):not(textarea):not(select) {
   background-color: rgba(0, 0, 255, 0.1);
 }
+.container:before {
+  content: '';
+  display: table;
+}
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 .card {
   width: calc(99.99% * 1/4 - (30px - 30px * 1/4));
+  height: 50px;
 }
 .card:nth-child(n) {
   float: left;
