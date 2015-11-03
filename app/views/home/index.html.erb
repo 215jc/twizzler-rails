@@ -15,58 +15,72 @@
 
 <br><br><br><br>
 
-<form action="http://www.yahoo.com" method="post">
+<form action="http://www.yahoo.com" method="post" class="jcform">
 
-  <fieldset>
+  <fieldset class="label-left">
 
-      <legend>Text inputs - First name and Last name:</legend>
+    <legend>Text inputs - First name and Last name:</legend>
 
+    <div>
       <label for="firstname">
         <span>First name</span>
         <input type="text" id="first_name" name="first_name" value="">
       </label>
+    </div>
 
+    <div>
       <label for="lastname">
         <span>Last name</span>
         <input type="text" id="last_name" name="last_name" value="">
       </label>
+    </div>
     
   </fieldset>
 
-  <fieldset>
+  <fieldset class="label-right">
 
     <legend>Radio inputs - Size:</legend>
 
-    <label for="small">
-      <span>Small</span>
-      <input type="radio" name="size" id="small" value="small">
-    </label>
-
-    <label for="medium">
-      <span>Medium</span>
-      <input type="radio" name="size" id="medium" value="medium">
-    </label>
-
-    <label for="large">
-      <span>Large</span>
-      <input type="radio" name="size" id="large" value="large">
-    </label>
+    <div>
+      <label for="small">
+        <span>Small</span>
+        <input type="radio" name="size" id="small" value="small">
+      </label>
+    </div>
+    
+    <div>
+      <label for="medium">
+        <span>Medium</span>
+        <input type="radio" name="size" id="medium" value="medium">
+      </label>
+    </div>
+    
+    <div>
+      <label for="large">
+        <span>Large</span>
+        <input type="radio" name="size" id="large" value="large">
+      </label>
+    </div>
     
   </fieldset>
 
-  <fieldset>
+  <fieldset class="label-right">
 
     <legend>Checkbox inputs - Options:</legend>
 
-    <label for="gift_wrap">
-      <span>Gift wrap</span>
-      <input type="checkbox" name="gift_wrap" id="gift_wrap" value="true">
-    </label>
-
-    <label for="embroider">
-      <span>Embroider</span>
-      <input type="checkbox" name="embroider" id="embroider" value="true">
-    </label>
+    <div>
+      <label for="gift_wrap">
+        <span>Gift wrap</span>
+        <input type="checkbox" name="gift_wrap" id="gift_wrap" value="true">
+      </label>
+    </div>
+    
+    <div>
+      <label for="embroider">
+        <span>Embroider</span>
+        <input type="checkbox" name="embroider" id="embroider" value="true">
+      </label>
+    </div>
     
   </fieldset>
 
@@ -74,15 +88,17 @@
 
     <legend>Select box - Color:</legend>
 
-    <label for="color">
-      <span>Color</span>
-      <select name="color">
-        <option value="red">Red</option>
-        <option value="green">Green</option>
-        <option value="blue">Blue</option>
-        <option value="pink">Pink</option>
-      </select>
-    </label>
+    <div>
+      <label for="color">
+        <span>Color</span>
+        <select name="color">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+          <option value="pink">Pink</option>
+        </select>
+      </label>
+    </div>
     
   </fieldset>
 
@@ -90,16 +106,24 @@
 
     <legend>Textarea - Comments:</legend>
 
-    <label for="comments">
-      <span>Comments</span>
-      <textarea name="comments" id="comments"></textarea>
-    </label>
-    
+    <div>
+      <label for="comments">
+        <span>Comments</span>
+        <textarea name="comments" id="comments"></textarea>
+      </label>
+    </div>
+
   </fieldset>
 
-  <button type="submit">Submit</button>
+  <fieldset>
 
-  <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+
+    <button type="reset">Reset</button>
+
+  </fieldset>
 
 </form>
+
+<p class="responsive">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 

@@ -7,17 +7,17 @@
     "test": "test"
   },
   "dependencies": {
-    "gulp-stylus": "^2.1.0",
-    "poststylus": "^0.2.1",
-    "rucksack-css": "^0.8.5",
+    "gulp-stylus": "2.1.0",
+    "poststylus": "0.2.1",
+    "rucksack-css": "0.8.5",
     "stylus": "0.52.4"
   },
   "devDependencies": {
     "autoprefixer": "6.0.3",
     "gulp": "3.9.0",
-    "gulp-postcss": "^6.0.1",
+    "gulp-postcss": "6.0.1",
     "gulp-sourcemaps": "1.6.0",
-    "gulp-watch": "^4.3.5",
+    "gulp-watch": "4.3.5",
     "lost": "6.6.2"
   },
   "scripts": {

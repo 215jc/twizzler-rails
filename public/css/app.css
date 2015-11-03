@@ -34,15 +34,15 @@ h4 {
   clear: both;
 }
 .card {
-  width: calc(99.99% * 1/4 - (15px - 15px * 1/4));
-  height: calc(99.99% * 1/4 - (15px - 15px * 1/4));
+  width: calc(99.99% * 1/4 - (1em - 1em * 1/4));
+  height: calc(99.99% * 1/4 - (1em - 1em * 1/4));
   position: relative;
-  height: 50px;
+  height: 5em;
 }
 .card:nth-child(n) {
   float: left;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin-right: 1em;
+  margin-bottom: 1em;
   clear: none;
 }
 .card:last-child {
@@ -65,4 +65,80 @@ h4 {
   bottom: auto;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.jcform {
+  border: 1px solid #008000;
+}
+.jcform div {
+  border: 1px solid #ffc0cb;
+}
+.jcform fieldset {
+  border: 0;
+  margin-bottom: 1em;
+}
+.jcform legend {
+  margin-bottom: 1em;
+}
+.jcform fieldset.label-right span {
+  float: right;
+}
+.jcform fieldset.label-right div {
+  float: left;
+  display: block;
+  clear: both;
+}
+.jcform fieldset.label-right input {
+  margin-right: 1em;
+}
+.jcform fieldset.label-left span {
+  border: 1px solid #00f;
+  text-align: right;
+  padding-right: 1em;
+  width: calc(99.999999% * 1/4);
+}
+.jcform fieldset.label-left span:nth-child(n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.jcform fieldset.label-left span:last-child {
+  margin-right: 0;
+}
+.jcform fieldset.label-left span:nth-child(4n) {
+  margin-right: 0;
+}
+.jcform fieldset.label-left span:nth-child(4n + 1) {
+  clear: left;
+}
+.jcform fieldset.label-left div {
+  display: block;
+  clear: both;
+  width: 500px;
+  *zoom: 1;
+}
+.jcform fieldset.label-left div:before {
+  content: '';
+  display: table;
+}
+.jcform fieldset.label-left div:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.jcform fieldset.label-left input {
+  width: calc(99.999999% * 5/8);
+}
+.jcform fieldset.label-left input:nth-child(n) {
+  float: left;
+  margin-right: 0;
+  clear: none;
+}
+.jcform fieldset.label-left input:last-child {
+  margin-right: 0;
+}
+.jcform fieldset.label-left input:nth-child(4n) {
+  margin-right: 0;
+}
+.jcform fieldset.label-left input:nth-child(4n + 1) {
+  clear: left;
 }

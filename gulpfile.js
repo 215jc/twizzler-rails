@@ -2,6 +2,7 @@ var gulp = require('gulp'),
     stylus = require('gulp-stylus'),
     postcss = require('gulp-postcss')
     poststylus = require('poststylus');
+    rucksack = require('rucksack-css');
     watch = require('gulp-watch');
 
 gulp.task('watch', function () {
