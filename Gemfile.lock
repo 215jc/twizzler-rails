@@ -145,6 +145,7 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    vuejs-rails (0.12.12)
     web-console (2.0.0.beta3)
       activemodel (~> 4.0)
       binding_of_caller (= 0.7.3.pre1)
@@ -168,6 +169,7 @@ DEPENDENCIES
   stylus (= 1.0.1)
   turbolinks (= 2.3.0)
   uglifier (= 2.5.3)
+  vuejs-rails (~> 0.12.12)
   web-console (= 2.0.0.beta3)
 
 BUNDLED WITH

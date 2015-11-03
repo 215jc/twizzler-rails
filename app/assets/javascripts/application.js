@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require vendor/vue.js.1.0.4/vue.min.js
+//= require vue
